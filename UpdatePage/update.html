@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My attendee</title>
+
+        <!-- font awesome cdn link -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+        <!-- custom css file link -->
+       
+        <link rel="stylesheet" href="./update.css">
+    </head>
+    <body>
+        <!-- <header class="App">
+            <h1 class="app_header"><a href="#" class="nav_link">surf Dashboard</a></h1> -->
+            <!-- <nav class="nav_bar">
+                <div class="signin-signup">
+                    <a class='nav_link anchor-signin' href="./signin/signin.html">Sign In</a>/
+                     <a class="nav_link anchor-signup" href="./signup/signup.html">Sign Up</a></div>
+                </div>
+            </nav> -->
+
+            <!-- search bar and icon  and profile -->
+            <!-- <div class="left-side-container">
+                <input type="search" placeholder="Search" class="search-box">
+                <label for="search-box" class="fas fa-search"></label>    
+                <img src="../asset/IMG_20210819_164230.jpg" width="50px" alt="profile image" id="profileImage" />
+            </div>
+
+
+        </header> -->
+
+        <div class="profile-navbar-card">
+            <a href="#">Home</a>
+            <a href="#">Dashboard</a>
+            <a href="#">My profile</a>
+            <a href="#">Update</a>
+            <a href="#">Settings</a>
+            <a href="#">Logout</a>
+        </div>
+        
+        <main class="container">
+            <!-- <div class="side_bar_section">
+                <SideBarContent />
+            </div> -->
+            <div class="main_hero">
+                <h1 class="update_form_header">Update</h1>
+                <form action="" id="update_form" class="update_form">
+                    <div>
+                        <label class="update_picture update_all">Profile Pic</label>
+                        <input type="file" class="update_picture_input" />
+                    </div>
+                    <div>
+                        <label class="update_firstname update_all">First Name:</label>
+                         <input type="text" class="update_firstname_input update_input_all" id="update_firstname_input" />
+                    </div>
+                    <div>
+                        <label class="update_lastname update_all">Last Name:</label>
+                         <input type="text" class="update_lastname_input update_input_all" id="update_lastname_input" />
+                    </div>
+                    <div>
+                        <label class="update_email update_all">Email:</label>
+                         <input type="email" class="update_email_input update_input_all" id="update_email_input" />
+                    </div>
+                    <div>
+                        <label class="update_dob update_all">Date Of Birth:</label>
+                         <input type="date" class="update_dob_input update_input_all" id="update_dob_input" />
+                    </div>
+                    <div>
+                        <label class="update-phone update_all">Phone no.</label>
+                        <input type="phone" class="update_phone_input update_input_all" />
+                    </div>
+                    <div>
+                        <label class="update_mat_no update_all">Mat No:</label>
+                         <input type="text" placeholder="sss/ssss/ssss" class="update_mat_no_input update_input_all" id="update_mat_no_input" />
+                    </div>
+                    
+                    <div>
+                        <label class="update_faculty update_all">Faculty:</label>
+                         <select name="Faculty" id="update_faculty_input" class="update_faculty_input update_select_all" onchange="hey()">
+                             <option value="science">science</option>
+                             <option value="art">Art</option>
+                         </select>
+                    </div>
+                    <div id="departmentWrapper">
+                        <label class="update_dept update_all">Department:</label>
+                         <select name="Department" id="update_dept_input" class="update_dept_input update_select_all" onchange="checkAll()">
+                             <option value="biochemistry">Biochemistry</option>
+                             <option value="microbiology">Micro Biology</option>
+                             <option value="geology">Geology</option>
+                         </select>
+                    </div>
+                    <div>
+                        <label class="update_level update_all">Level:</label>
+                         <select name="Level" id="update_level_input" class="update_level_input update_select_all">
+                             <option value="100">100 Level</option>
+                             <option value="200">200 Level</option>
+                             <option value="300">300 Level</option>
+                             <option value="400">400 Level</option>
+                         </select>
+                    </div>
+                    <div>
+                        <label class="update_semester update_all">Semester:</label>
+                         <select name="semester" id="update_semester_input" class="update_semester_input update_select_all" onchange="checkAll()">
+                             <option value="first">First Semester</option>
+                             <option value="second">Second Semester</option>
+                         </select>
+                    </div>
+                    <div class="course_selection course_section" id="course_selection"> <span>Course Selection</span>
+                        <div class="course_100 course_list_section" id="course_100">
+                            <h2 class="course_headers">100L Course</h2>
+                            <!-- <div>
+                                <label for="" class="400_course_check each_course"><input type="checkbox" value="BCH 401">BCH 401</label>
+                                <label for="" class="400_course_check each_course"><input type="checkbox" value="BCH 401">BCH 402</label>
+                                <label for="" class="400_course_check each_course"><input type="checkbox" value="BCH 401">BCH 403</label>
+                                <label for="" class="400_course_check each_course"><input type="checkbox" value="BCH 401">BCH 404</label>
+                                <label for="" class="400_course_check each_course"><input type="checkbox" value="BCH 401">BCH 405</label>
+                            </div> -->
+                        </div>
+                        <div class="course_200 course_list_section" id="course_200">
+                            <h2 class="course_headers">200L Course</h2>
+                            <!-- <div>
+                                <label for="" class="400_course_check each_course"><input type="checkbox" value="BCH 401">BCH 401</label>
+                                <label for="" class="400_course_check each_course"><input type="checkbox" value="BCH 401">BCH 402</label>
+                                <label for="" class="400_course_check each_course"><input type="checkbox" value="BCH 401">BCH 403</label>
+                                <label for="" class="400_course_check each_course"><input type="checkbox" value="BCH 401">BCH 404</label>
+                                <label for="" class="400_course_check each_course"><input type="checkbox" value="BCH 401">BCH 405</label>
+                            </div> -->
+                        </div>
+                        <div class="300_course course_list_section" id="course_300">
+                            <h2 class="course_headers">300L Course</h2>
+                            <!-- <div>
+                                <label for="" class="400_course_check each_course">BCH 401<input type="checkbox" value="BCH 401"></label>
+                                <label for="" class="400_course_check each_course">BCH 402<input type="checkbox" value="BCH 401"></label>
+                                <label for="" class="400_course_check each_course">BCH 403<input type="checkbox" value="BCH 401"></label>
+                                <label for="" class="400_course_check each_course">BCH 404<input type="checkbox" value="BCH 401"></label>
+                                <label for="" class="400_course_check each_course">BCH 405<input type="checkbox" value="BCH 401"></label>
+                            </div> -->
+                        </div>
+                        <div class="400_course course_list_section" id="course_400">
+                            <h2 class="course_headers">400L Course</h2>
+                            <!-- <div>
+                                <label for="" class="400_course_check each_course">BCH 401<input type="checkbox" value="BCH 401"></label>
+                                <label for="" class="400_course_check each_course">BCH 402<input type="checkbox" value="BCH 401"></label>
+                                <label for="" class="400_course_check each_course">BCH 403<input type="checkbox" value="BCH 401"></label>
+                                <label for="" class="400_course_check each_course">BCH 404<input type="checkbox" value="BCH 401"></label>
+                                <label for="" class="400_course_check each_course">BCH 405<input type="checkbox" value="BCH 401"></label>
+                            </div> -->
+                        </div>
+                    </div>
+                    <input type="submit" value="Update" class="update_button" id="update_button">
+                </form>
+            </div>
+        </main>
+
+        <!-- <footer>
+            <p class="footer">&copy 2021 Che. All Rights Reserved.</p>
+        </footer> -->
+        
+           <!--
+            <div class="greetings">
+                <div>
+                  <h2>Hello <span class="her-name">Sophia</span>!</h2>
+                  <p>Today We are just getting started with this. 
+                      And i will work you react.js development.</p>
+                  <div class="read_more">Read More..</div></div>
+                <img src=./attendee/public/IMG_20200701_121956_538.jpg alt="" class="greetings_image-card" />
+              </div>
+              <div class="mark_attendance_card">
+                <div class="course_title">
+                          Course Title: Biochemical Reseach
+                <div class="course_code"> Course Code: BCH 316</div>
+                </div>
+                <div class="venue">Venue: LH1 phase2</div>
+    
+                <div type-=""class="sign_attendance">Mark attendance<input type="checkbox" className="marked" id="marked" name="marked" value="marked" /><span className="myCheck" id="myCheck"></span></div>
+             </div>
+            -->
+             
+       
+        <script type="text/javascript" src="update.js"></script>
+        
+    </body>
+</html>
