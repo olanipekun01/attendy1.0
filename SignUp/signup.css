@@ -134,7 +134,19 @@ html {
 .profile-navbar-card a:hover {
     letter-spacing: .1rem;
 }
+
 .container {
+    width: 100%;
+    /* height: 520px; */
+    display: flex;
+    background-color: rgb(122, 169, 216);
+      /* margin-bottom: 8px; */
+      /* padding-bottom: 25px; */
+    
+}
+
+
+.signup-container-wrapper {
     width: 100%;
     background-color: rgb(122, 169, 216);
       /* margin-bottom: 8px; */

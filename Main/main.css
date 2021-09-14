@@ -137,13 +137,824 @@ html {
 
 .container {
     width: 100%;
-    height: 520px;
+    /* height: 520px; */
     display: flex;
     background-color: rgb(122, 169, 216);
       /* margin-bottom: 8px; */
       /* padding-bottom: 25px; */
     
 }
+
+
+/* Dashboard style starts */
+
+.side_bar_section {
+    display:flex;
+    width: 24%;
+    height: 560px;
+    background-color: black;
+    margin-top: 87px;
+    float: left;
+    border-radius: 15px;
+   /* margin-left: 10px;  */
+}
+
+/* .side_bar_section {
+    width: 24%;
+    height: 560px;
+    background-color: black;
+    margin-top: 9px;
+    float: right;
+    border-radius: 15px;
+} */
+
+.hero_section {
+    height: 580px;
+    /* background-color: rgb(233, 230, 230); */
+    margin: 87px auto;
+    float: right;
+    /* margin-left: 10px; */
+    /* padding: 0 auto; */
+}
+
+.greetings {
+height: 200px;
+width: 700px;
+background-color: rgb(255, 199, 95);
+margin-top: 0px;
+margin-left: 20px;
+border-radius: 15px;
+color: #fff;
+}
+
+.greetings div {
+width: 60%;
+text-align: left;
+margin-left: 30px;
+float: left;
+}
+
+.greetings h2 {
+font-size: 15px;
+padding-top: 25px;
+text-align: left;
+margin-left: 30px;
+}
+
+.greetings p {
+width: 70%;
+text-align: left;
+margin-left: 30px;
+}
+
+.read_more {
+font-size: 15px;
+font-weight: bold;
+text-align: left;
+margin-left: 60px;
+}
+
+.greetings_image-card {
+height: 150px;
+width: 150px;
+float: left;
+margin-top: 25px;
+border-radius: 20px;
+}
+
+.mark_attendance_card {
+height: 350px;
+width: 700px;
+background-color: lavender;
+margin-top: 20px;
+margin-left: 20px;
+border-radius: 15px;
+color: black;
+text-align: left;
+}
+
+.course_title {
+padding-top: 40px;
+font-size: 33px;
+margin-left: 60px;
+}
+
+.course_code {
+margin-top: 20px;
+margin-left: 0px;
+font-size: 27px;
+}
+
+.venue {
+margin-top: 20px;
+margin-left: 60px;
+font-size: 27px;
+}
+
+.sign_attendance {
+margin-top: 20px;
+margin-left: 60px;
+font-size: 27px;
+}
+
+
+/* Dashboard style ends */
+
+
+/* LandingPage style starts */
+
+.side_bar_section {
+    display:flex;
+    width: 24%;
+    height: 560px;
+    background-color: black;
+    margin-top: 29px;
+    float: left;
+    border-radius: 15px;
+    padding-top: 30px;
+   /* margin-left: 10px;  */
+}
+
+.side_bar_section a {
+    margin-top: 20px;
+    background-color: rgb(199, 197, 197);
+    height: 50px;
+    width: 90%;
+    margin: 0 auto;
+    border-radius: 30px;
+    text-align: center;
+    border: none;
+    opacity: 0.8;
+    text-decoration: none;
+}
+
+.side_bar_section a:hover {
+    opacity: 1;
+}
+
+
+.side_bar_section a div{
+    color: black;
+    font-size: 30px;
+    margin: auto;
+}
+
+
+.landing-container-wrapper{
+    background-color: rgb(255, 255, 255);
+    width: auto;
+    height: 610px;
+    display: flex;
+   
+}
+
+.main_hero {
+    
+    display: block;
+    width: 40%;
+    margin-top: 130px;
+    margin-left: -30px;
+    margin-right: auto;
+    text-align: left;
+}
+
+.landing_go_mark {
+    text-align: left;
+    font-size: 42px;
+    /* color:rgb(98, 98, 221) */
+    color: var(--black);
+}
+
+.landing_content {
+    font-size: 25px;
+    /* color: rgb(167, 166, 166); */
+    color: var(--light-color);
+    margin-top: 20px;
+}
+
+.landing_button {
+    width: 350px;
+    height: 70px;
+    border-radius: 25px;
+    margin-left: 85px;
+    /* background-color:rgb(91, 91, 141); */
+    background-color: var(--black);
+    border: none;
+    color: #fff;
+    font-size: 30px;
+    margin: 40px;
+    opacity: 0.8;
+    
+    
+    /* width: 70%;
+    height: 47px;
+    margin-left: 100px;
+    margin-top: 40px;
+    border-radius: 10px;
+    /* background-color: rgb(56, 56, 233);
+    /* background-color: rgb(199, 197, 197); 
+    background-color: rgb(122, 169, 216);
+    border: none;
+    /* color: white; 
+    margin-bottom: 30px;
+    font-size: 30px; */
+}
+
+.landing_button:hover {
+    /* opacity: 1; */
+     /* background-color: rgb(122, 169, 216); */
+   background-color: rgb(199, 197, 197);
+    /* color: white; */
+    letter-spacing: .1rem;
+}
+
+.landing_picture_avatar {
+    width: 60%;
+    margin-top: 100px;
+    float: left;
+   
+}
+
+.landing_picture_avatar figure img {
+    height: 400px;
+    width: 650px;
+    border-radius: 0%;
+    margin-left: 0px;
+}
+
+
+/* LandingPage style ends */
+
+
+/* ProfilePage style starts */
+
+.profile-container-wrapper {
+    width: 100%;
+    /* height: 520px; */
+    background-color: rgb(245, 245, 245);
+    margin-bottom: 100px;
+    
+}
+/* 
+.container {
+    width: 100%;
+    background-color: rgb(122, 169, 216);
+    margin-bottom: 8px;
+    
+} */
+
+.large-name-header {
+    background: rgb(122, 169, 216);
+    width: 100%;
+    margin-top: 55px;
+    height: 295px;
+    color: #fff;
+    font-size: 50px;
+    padding-top: 35px;
+    text-align: center;
+}
+
+.profile-info-content {
+    width: 80%;
+    height: 250px;
+    background: #fff;
+    border: 0.1px  var(--light-color) solid;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: -50px;
+    display: flex;
+    z-index: 950;
+}
+
+.profile-info-content .profile-info-content-img {
+    width: 180px;
+    height: 190px;
+    border-radius: 50%;
+    border: none;
+    margin-top: -90px;
+    margin-left: 90px;
+    padding: auto auto;
+
+}
+
+.profile-info-content .personal-info,.school-info {
+   width: 250px;
+   margin-left: 45px;
+   font-size: 15px;
+   font-weight: bold;
+}
+
+.profile-info-content .personal-info div, .school-info div {
+    display: block;
+    margin-top: 20px;
+}
+
+/* ProfilePage style ends */
+
+
+
+/* Signin style starts */
+
+.signin-container-wrapper {
+    width: 100%;
+    background-color: rgb(122, 169, 216);
+    /* margin-bottom: 8px; */
+    padding-bottom: 25px;
+    
+}
+
+/* .side_bar_section {
+    display:flex;
+    width: 24%;
+    height: 560px;
+    background-color: black;
+    margin-top: 29px;
+    float: left;
+    border-radius: 15px;
+   // margin-left: 10px;  //
+} */
+
+.main_hero {
+    display: block;
+    width: 74%;
+    margin-top: 55px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* .signin-content {
+    width: 75%;
+    background-color: rgb(255, 255, 255);
+    margin-top: 0px;
+    margin-left: 100px;
+    margin-left: auto;
+    margin-right: auto;
+} */
+.Signin-header {
+    margin-top: 5px;
+    text-align: center;
+    font-size: 35px;
+    color: #fff;
+}
+
+.signin-form {
+    height: 450px;
+    width: 650px;
+    background-color: rgb(242, 242, 255);
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 15px;
+    /* color: rgb(75, 73, 73); */
+}
+
+.label-signin-mat {
+    font-size: 30px;
+    display: block;
+    text-align: left;
+    margin-left: 100px;
+    margin-top: 50px;
+    padding-top: 40px;
+}
+.label-signin-pass {
+    font-size: 30px;
+    display: block;
+    text-align: left;
+    margin-left: 100px;
+    margin-top: 50px;
+}
+
+.signin-mat-no, .signin-password {
+    width: 350px;
+    height: 40px;
+    margin-left: 150px;
+    margin-top: 10px;
+    border-radius: 20px;
+    /* border: none; */
+    border: 1px rgb(75, 73, 73) solid;
+}
+
+
+.signin-button {
+    /* font-size: 20px;
+    font-weight: bold;
+    width: 150px;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    margin-left: 250px;
+    margin-top: 30px;
+    background-color: rgb(199, 197, 197); */
+
+    width: 70%;
+    height: 47px;
+    margin-left: 100px;
+    margin-top: 40px;
+    border-radius: 10px;
+    /* background-color: rgb(56, 56, 233); */
+    /* background-color: rgb(199, 197, 197); */
+    background-color: rgb(122, 169, 216);
+    border: none;
+    /* color: white; */
+    margin-bottom: 30px;
+    font-size: 30px;
+}
+
+.signin-button:hover {
+    /* background-color: rgb(207, 169, 169);
+    color: white; */
+
+     /* background-color: rgb(122, 169, 216); */
+     background-color: rgb(199, 197, 197);
+     /* color: white; */
+     letter-spacing: .1rem;
+}
+
+.not-reg-message {
+    font-size: 15px;
+    margin-left: 350px;
+    margin-top: 10px;
+}
+
+.signin-link-signup {
+    color: rgb(72, 142, 211);
+    font-size: 22px;
+}
+
+
+.signin-link-signup:hover {
+    text-decoration: underline;
+    letter-spacing: .1rem;
+}
+
+/* Signin style ends */
+
+/* Signup style starts */
+
+.signup-container-wrapper {
+    width: 100%;
+    background-color: rgb(122, 169, 216);
+      /* margin-bottom: 8px; */
+      padding-bottom: 25px;
+    
+}
+
+/* .side_bar_section {
+    display:flex;
+    width: 24%;
+    height: 560px;
+    background-color: black;
+    margin-top: 29px;
+    float: left;
+    border-radius: 15px;
+    margin-left: 10px;  
+}
+*/
+
+.main_hero {
+    display: block;
+    width: 74%;
+    margin-top: 55px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* .signup-content {
+    width: 75%;
+    background-color: rgb(255, 255, 255);
+    margin-left: 10px; 
+} */
+
+.signup-header {
+    margin-top: 5px;
+    text-align: center;
+    font-size: 35px;
+    color: #fff;
+}
+
+.signup-form {
+    width: 700px;
+    background-color: rgb(242, 242, 255);
+    margin-top: 50px;
+    margin-left: 140px;
+    padding-top: 5px;
+    border-radius: 15px;
+    /* color: rgb(75, 73, 73); */
+
+    
+}
+
+
+.label-signup-firstname, .label-signup-lastname, .label-signup-username, 
+.label-signup-mat, .label-signup-mail, .label-signup-confirm-mail,
+ .label-signup-password, .label-signup-confirm-password {
+    font-size: 30px;
+    display: block;
+    text-align: left;
+    margin-left: 100px;
+    margin-top: 20px;
+}
+
+.signup-firstname, .signup-lastname, .signup-username,  .signup-mat-no, .signup-mail,
+.signup-confirm-mail, 
+ .signup-password,.signup-confirm-password{
+    width: 400px;
+    height: 40px;
+    border-radius: 10px;
+    /* border: none; */
+    border: 1px rgb(75, 73, 73) solid;
+    margin-left: 150px;
+    margin-top: 10px;
+}
+/* 
+.signup-username {
+    margin-left: 101px;
+}
+
+.signup-mail {
+    margin-left: 68px;
+}
+
+.signup-mat-no {
+    margin-left: 59px;
+}
+
+.signup-confirm-mail {
+    margin-left: 115px;
+}
+
+.signup-firstname {
+    margin-left: 81px;
+}
+
+.signup-lastname {
+    margin-left: 127px;
+}
+
+.signup-confirm-password {
+    margin-left: 94px;
+}
+
+.signup-password {
+    margin-left: 99px;
+}
+
+.signup-picture {
+    margin-left: 98px;
+} */
+
+.signup-button {
+    /* font-size: 20px;
+    font-weight: bold;
+    width: 150px;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    margin-left: 270px;
+    margin-top: 30px;
+    background-color: rgb(199, 197, 197); */
+
+    width: 70%;
+    height: 47px;
+    margin-left: 100px;
+    margin-top: 40px;
+    border-radius: 10px;
+    /* background-color: rgb(56, 56, 233); */
+    /* background-color: rgb(199, 197, 197); */
+    background-color: rgb(122, 169, 216);
+    border: none;
+    /* color: white; */
+    margin-bottom: 30px;
+    font-size: 30px;
+}
+
+.signup-button:hover {
+    /* background-color: rgb(122, 169, 216); */
+    background-color: rgb(199, 197, 197);
+    /* color: white; */
+    letter-spacing: .1rem;
+}
+
+.already-reg-message {
+    font-size: 15px;
+    margin-left: 450px;
+    margin-top: 10px;
+}
+
+.signup-link-signin {
+    color: rgb(72, 142, 211);
+    font-size: 22px;
+}
+
+.signup-link-signin:hover {
+    text-decoration: underline;
+    letter-spacing: .1rem;
+}
+
+
+/* Signup style ends */
+
+/* Update style starts */
+
+.update-container-wrapper {
+    width: 100%;
+    background-color: rgb(122, 169, 216);
+    /* margin-bottom: 8px; */
+    padding-bottom: 25px;
+    
+}
+
+
+.side_bar_section {
+    display:flex;
+    width: 24%;
+    height: 560px;
+    background-color: black;
+    margin-top: 87px;
+    float: left;
+    border-radius: 15px;
+   /* margin-left: 10px;  */
+}
+
+.main_hero {
+    display: block;
+    width: 70%;
+    margin-top: 55px;
+    /* float: left; */
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0px;
+}
+
+.update_form_header {
+    margin-top: 5px;
+    text-align: center;
+    font-size: 35px;
+    color: #fff;
+}
+.update_form {
+    display: block;
+    /* background-color: rgb(242, 242, 255); */
+    background: rgb(242, 242, 255);
+    border-radius: 30px;
+    margin-top: 50px;
+    /* color: rgb(75, 73, 73); */
+}
+
+.update_picture {
+    padding-top: 30px;
+}
+
+.update_picture_input {
+    width: 550px;
+    height: 30px;
+    margin-left: 150px;
+    margin-top: 5px;
+}
+
+.update_all {
+    font-size: 30px;
+    display: block;
+    margin-left: 100px;
+    margin-top: 10px;
+}
+
+.update_input_all {
+    width: 550px;
+    height: 30px;
+    border-radius: 5px;
+    margin-left: 150px;
+    margin-top: 5px;
+    /* border: 0.02rem rgb(53,114,176) solid; */
+    border: 1px rgb(75, 73, 73) solid;
+}
+
+/* .update_fullname_input {
+    margin-left: 20px;
+}
+
+.update_email_input {
+    margin-left: 75px;
+}
+
+.update_mat_no_input {
+    margin-left: 54px;
+} */
+
+.update_select_all {
+    width: 555px;
+    height: 35px;
+    border-radius: 5px;
+    margin-left: 150px;
+    margin-top: 5px;
+    /* border: 0.02rem rgb(53,114,176) solid; */
+    border: 1px rgb(75, 73, 73) solid;
+}
+
+/* .update_faculty_input {
+    margin-left: 57px;
+}
+
+.update_dept_input {
+    margin-left: 5px;
+}
+
+.update_level_input {
+    margin-left: 78px;
+}
+
+.update_semester_input {
+    margin-left: 37px;
+} */
+
+.course_selection {
+    margin-left: 100px;
+    margin-top: 40px;
+}
+.course_selection  span{
+    font-size: 35px;
+    text-align: left;
+    display: block;
+}
+
+.course_headers {
+    font-size: 25px;
+    text-align: left;
+}
+
+.course_list_section {
+    margin-top: 20px;
+    margin-left: 30px;
+    width: 150px;
+    float: left;
+}
+
+.course_list_section div label {
+    display: block;
+    clear: both;
+    margin-top: 10px;
+    font-size: 20px;
+    /* color: rgb(53,114,176); */
+    color: rgb(75, 73, 73);
+}
+
+.first1, .first2, .first3, .first4 {
+    display: block;
+}
+
+.second1, .second2, .second3, .second4 {
+    display: none;
+}
+
+.each_course {
+    margin-left: 20px;
+    float: left;
+}
+
+.update_button {
+    /* width: 82%;
+    height: 47px;
+    margin-left: 100px;
+    margin-top: 40px;
+    border-radius: 10px;
+    background-color: rgb(56, 56, 233);
+    border: none;
+    color: white;
+    margin-bottom: 30px; */
+
+    /* font-size: 20px;
+    font-weight: bold;
+    width: 150px;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    margin-left: 270px;
+    margin-top: 30px;
+    background-color: rgb(199, 197, 197); */
+
+    width: 70%;
+    height: 47px;
+    margin-left: 150px;
+    margin-top: 40px;
+    border-radius: 10px;
+    /* background-color: rgb(56, 56, 233); */
+    /* background-color: rgb(199, 197, 197); */
+    background-color: rgb(122, 169, 216);
+    border: none;
+    /* color: white; */
+    margin-bottom: 30px;
+    font-size: 30px;
+}
+
+.update_button:hover {
+     /* background-color: rgb(122, 169, 216); */
+     background-color: rgb(199, 197, 197);
+     /* color: white; */
+     letter-spacing: .1rem;
+}
+
+/* Update style ends */
 
 
 .footer {
@@ -161,6 +972,13 @@ footer {
     width: 100%;
     position: relative;
 }
+
+/* footer {
+    height: 45px;
+    width: 100%;
+    margin-top: -8px;
+    margin-bottom: 0;
+} */
 
 
 @media screen and (min-width: 1450px) {

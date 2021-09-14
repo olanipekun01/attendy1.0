@@ -1,14 +1,15 @@
-let profileImage = document.querySelector('#profileImage');
-let profileNavbarCard = document.querySelector('.profile-navbar-card');
+// let profileImage = document.querySelector('#profileImage');
+// let profileNavbarCard = document.querySelector('.profile-navbar-card');
 
-profileImage.onclick = () => {
-    profileNavbarCard.classList.toggle('active');
-}
+// profileImage.onclick = () => {
+//     profileNavbarCard.classList.toggle('active');
+// }
 
-window.onscroll = () => {
-    profileNavbarCard.classList.remove('active');
-}
-fuoye = {
+// window.onscroll = () => {
+//     profileNavbarCard.classList.remove('active');
+// }
+
+var fuoye = {
     science : {
         biochemistry : {
             level_100 : {
@@ -148,6 +149,7 @@ function placeCourse(semester, courseLoc) {
         var input = document.createElement('input');
         input.setAttribute('type', "checkbox");
         input.setAttribute("value", courseLoc[i]);
+        input.setAttribute("class", 'allCheck');
         label.append(input);
         label.append(courseLoc[i]);
             div.append(label);
@@ -360,3 +362,63 @@ checkSemester();
 // function demClicks() {
     
 // }
+
+
+var user = {
+    personal :{
+
+    },
+    school: {
+
+    }
+}
+
+
+
+var update_button = document.getElementById('update_button');
+
+update_button.onclick = () => {
+
+    alert('Updated');
+    var update_picture_input = document.querySelector('.update_picture_input').value;
+    var update_firstname_input  = document.querySelector('.update_firstname_input ').value;
+    var update_lastname_input = document.querySelector('.update_lastname_input').value;
+    var update_email_input = document.querySelector('.update_email_input').value;
+    var update_dob_input = document.querySelector('.update_dob_input').value;
+    var update_phone_input = document.querySelector('.update_phone_input').value;
+
+    var update_mat_no_input = document.querySelector('.update_mat_no_input').value;
+    var update_faculty_input = document.querySelector('.update_faculty_input').value;
+    var update_dept_input = document.querySelector('.update_dept_input').value;
+    var update_level_input = document.querySelector('.update_level_input').value;
+    var update_semester_input = document.querySelector('.update_semester_input').value;
+
+    var courseList = () => {
+        var course = [];
+        for (x = 0;  x < document.querySelectorAll('.allCheck').length; x++ ) {
+            if (document.querySelectorAll('.allCheck').item(x).checked == true) {
+                // console.log(document.querySelectorAll('.allCheck').item(x).value);
+                course.push(document.querySelectorAll('.allCheck').item(x).value);
+            }
+        }
+        return course
+    }
+
+    user.personal.picture = update_picture_input;
+    user.personal.firstname = update_firstname_input;
+    user.personal.lastname = update_lastname_input;
+    user.personal.email = update_email_input;
+    user.personal.birthdate = update_dob_input;
+    user.personal.phone = update_phone_input;
+
+    user.school.matric_no = update_mat_no_input;
+    user.school.faculty = update_faculty_input;
+    user.school.department = update_dept_input;
+    user.school.level = update_level_input;
+    user.school.semester = update_semester_input;
+    user.school.courses = courseList();
+
+    console.log(user);
+   
+  
+}
